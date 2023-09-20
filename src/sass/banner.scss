@@ -1,0 +1,93 @@
+.banner {
+  position: relative;
+  display: flex;
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__timer {
+    position: absolute;
+    left: 1.3rem;
+    bottom: 1.4rem;
+  }
+
+  &__price {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 1.4rem;
+  }
+}
+
+.timer,
+.price {
+  @include vert-flex;
+  align-items: center;
+
+  &>* {
+    color: $color-main-white;
+  }
+}
+
+.timer {
+  border-radius: 7.101px;
+  background: $color-primary;
+  width: 11rem;
+  padding: 0.9rem 0.7rem;
+  gap: .8rem;
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__time {
+    color: $color-main-white;
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.price {
+  border-radius: 5.677px;
+  background: $color-secondary;
+  padding: 0.5rem 0.5rem;
+  width: 11.6rem;
+  gap: 0.6rem;
+
+
+  &__value {
+
+    &--old,
+    &--new {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &--old {
+      font-size: 1.8rem;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 0.35rem;
+        width: 105%;
+        border-radius: .5rem;
+        background-color: $color-primary;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--new {
+      font-size: 2.2rem;
+    }
+  }
+
+}

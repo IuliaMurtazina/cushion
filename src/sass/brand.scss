@@ -1,0 +1,18 @@
+.brand {
+  @include vert-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.9rem 1rem;
+  background-color: $color-primary-light;
+
+  &__logo {
+    width: 100%;
+    max-width: 21.8rem;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 13.469px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,153 @@
+.main {
+  @include vert-flex;
+  gap: 2rem;
+  padding: 1.1rem 1.7rem 4.1rem;
+
+  background-color: $color-grey-light;
+}
+
+.trust {
+  @include flex-center;
+  justify-content: space-between;
+  font-size: 12.067px;
+
+  &__image {
+    width: 100%;
+    max-width: 7.2rem;
+  }
+
+  &__sell {
+    color: $color-secondary;
+    text-decoration-line: underline;
+  }
+}
+
+.slippers {
+  width: 100%;
+
+  &__slide {
+    width: 100%;
+
+    border-radius: 2rem;
+  }
+}
+
+.preview {
+  @include flex-center;
+  justify-content: space-between;
+  gap: 1.2rem;
+
+  &__item {
+    &--image {
+      width: 100%;
+      max-width: 8rem;
+      height: 6.6rem;
+      object-fit: cover;
+      border-radius: 1rem;
+      transition: all .3s;
+    }
+
+    &.active {
+      opacity: .4;
+    }
+  }
+}
+
+.description {
+  @include vert-flex;
+  gap: 1.2rem;
+
+  &__item {
+
+    &--text {
+      display: inline;
+    }
+
+    &--flag {
+      width: 1.3rem;
+      height: 1rem;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.rating {
+  @include flex-center;
+  gap: 1rem;
+
+  &__icon {
+    height: 1.4rem;
+    width: 1.4rem;
+    fill: $color-grey-light;
+  }
+}
+
+.order {
+  @include vert-flex;
+  gap: 2rem;
+
+  &__choice {
+    @include flex-center;
+    justify-content: space-between;
+    gap: 1.6rem;
+
+    &--group {
+      width: 50%;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: $color-secondary;
+    text-transform: uppercase;
+    color: $color-main-white;
+    text-align: center;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border-radius: 1.5rem;
+  }
+}
+
+.choice-group {
+  @include vert-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  &__label {
+    font-size: 1rem;
+  }
+
+  &__select {
+    width: 100%;
+    appearance: none;
+    height: 5rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 21.69px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    background-color: $color-main-white;
+    cursor: pointer;
+
+  }
+
+  &__select-container {
+    position: relative;
+    width: 100%;
+
+    &::before {
+      content: url('../img/arrow-down.svg');
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0.9rem;
+    }
+  }
+}

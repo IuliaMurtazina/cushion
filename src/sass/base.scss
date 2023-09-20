@@ -1,0 +1,96 @@
+////////////////////////////////////////
+// Fonts
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro.eot');
+  src: local('Gotham Pro'), local('Gotham Pro'),
+    url('../fonts/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Medium.eot');
+  src: local('GothamPro Medium'), local('GothamPro-Medium'),
+    url('../fonts/GothamPro-Medium.woff') format('woff'),
+    url('../fonts/GothamPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro-Bold.eot');
+  src: local('GothamPro Bold'), local('GothamPro-Bold'),
+    url('../fonts/GothamPro-Bold.woff') format('woff'),
+    url('../fonts/GothamPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+////////////////////////////////////////
+// Variables
+
+$color-main-dark: #2C2B31;
+$color-main-white: #fff;
+
+$color-grey-light: #F0F0F0;
+
+$color-primary: #F19D2F;
+$color-primary-light: #FFD1AC;
+
+$color-secondary: #37D997;
+
+
+$font-size-primary: 1.6rem;
+
+////////////////////////////////////////
+// MEDIA QUERY MANAGER
+
+
+
+////////////////////////////////////////
+// Mixins
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin vert-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+////////////////////////////////////////
+// Root
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gotham Pro", sans-serif;
+  color: $color-main-dark;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 39rem;
+  margin: 0 auto;
+  font-size: 15.29px;
+  font-weight: 400;
+}
+
+.product-title {
+  font-size: 19.168px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

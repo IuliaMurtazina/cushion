@@ -1,0 +1,25 @@
+.header {
+
+  @include flex-center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: $color-primary;
+  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &__promo {
+    text-align: center;
+    font-size: 12.694px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__flag {
+    width: 1.3rem;
+    height: 1rem;
+    object-fit: cover;
+  }
+}
