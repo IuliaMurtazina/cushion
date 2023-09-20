@@ -44,7 +44,7 @@ const slippers = new Swiper(".slippers", {
   loop: true,
 
   autoplay: {
-    delay: 1500,
+    delay: 150,
     disableOnInteraction: true,
   },
 });
@@ -52,8 +52,8 @@ const slippers = new Swiper(".slippers", {
 const previewItems = document.querySelectorAll(".preview__item");
 
 previewItems.forEach((previewImage, index) => {
-  previewImage.addEventListener("click", () => {
-    slippers.slideTo(index);
+  previewImage.addEventListener("click", () => {    
+    slippers.slideToLoop(index);
   });
 });
 
@@ -93,7 +93,6 @@ Array.from(selectList).forEach((select) =>
 document.addEventListener("click", function () {
   Array.from(selectContainerList).forEach((selectContainer) => {
     if (!selectContainer.classList.contains("active")) return;
-    console.log(123);
     selectContainer.classList.remove("active");
   });
 });
