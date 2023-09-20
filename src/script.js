@@ -44,7 +44,7 @@ const slippers = new Swiper(".slippers", {
   loop: true,
 
   autoplay: {
-    delay: 150,
+    delay: 1500,
     disableOnInteraction: true,
   },
 });
