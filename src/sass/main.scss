@@ -135,7 +135,6 @@
     border-radius: 2rem;
     background-color: $color-main-white;
     cursor: pointer;
-
   }
 
   &__select-container {
@@ -148,6 +147,10 @@
       top: 50%;
       transform: translateY(-50%);
       right: 0.9rem;
+    }
+
+    &.active::before {
+      transform: translateY(-50%) rotate(180deg);
     }
   }
 }

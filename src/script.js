@@ -76,6 +76,28 @@ Array.from(stars)
     star.style.fill = "#F8B656";
   });
 
+// SELECT
+
+const selectList = document.querySelectorAll(".choice-group__select");
+const selectContainerList = document.querySelectorAll(
+  ".choice-group__select-container",
+);
+
+Array.from(selectList).forEach((select) =>
+  select.addEventListener("click", function (event) {
+    event.stopPropagation();
+    select.parentElement.classList.toggle("active");
+  }),
+);
+
+document.addEventListener("click", function () {
+  Array.from(selectContainerList).forEach((selectContainer) => {
+    if (!selectContainer.classList.contains("active")) return;
+    console.log(123);
+    selectContainer.classList.remove("active");
+  });
+});
+
 // FORM
 const form = document.querySelector(".order");
 form.addEventListener("submit", (e) => {
