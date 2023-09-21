@@ -43,38 +43,41 @@
   </section>
 
   <main class="main">
-    <div class="trust order__trust">
+    <div class="trust main__trust">
       <span class="trust__grade">Excellent 4.8/5</span>
       <img src="./img/trust.png" alt="Trustpilot" class="trust__image">
       <span class="trust__sell">best selling</span>
     </div>
-    <h2 class="product-title">Orthopedic Slippers</h2>
+    <h2 class="main__title product-title">Orthopedic Slippers</h2>
 
-    <div class="slippers swiper">
-      <div class="slippers__wrapper swiper-wrapper">
-        <img src="./img/black.png" alt="Black slippers" class="slippers__slide swiper-slide">
-        <img src="./img/orange.png" alt="Orange slippers" class="slippers__slide swiper-slide">
-        <img src="./img/pink.png" alt="Pink slippers" class="slippers__slide swiper-slide">
-        <img src="./img/yellow.png" alt="Yellow slippers" class="slippers__slide swiper-slide">
+    <div class="main__slippers slippers">
+      <div class="slippers-slider swiper">
+        <div class="slippers-slider__wrapper swiper-wrapper">
+          <img src="./img/black.png" alt="Black slippers" class="slippers-slider__slide swiper-slide">
+          <img src="./img/orange.png" alt="Orange slippers" class="slippers-slider__slide swiper-slide">
+          <img src="./img/pink.png" alt="Pink slippers" class="slippers-slider__slide swiper-slide">
+          <img src="./img/yellow.png" alt="Yellow slippers" class="slippers-slider__slide swiper-slide">
+        </div>
+      </div>
+  
+      <div class="slippers-preview">
+        <div class="slippers-preview__item active">
+          <img src="./img/black.png" alt="Black slippers" class="slippers-preview__item--image">
+        </div>
+        <div class="slippers-preview__item">
+          <img src="./img/orange.png" alt="Orange slippers" class="slippers-preview__item--image">
+        </div>
+        <div class="slippers-preview__item">
+          <img src="./img/pink.png" alt="Pink slippers" class="slippers-preview__item--image">
+        </div>
+        <div class="slippers-preview__item">
+          <img src="./img/yellow.png" alt="Yellow slippers" class="slippers-preview__item--image">
+        </div>
       </div>
     </div>
 
-    <div class="preview">
-      <div class="preview__item active">
-        <img src="./img/black.png" alt="Black slippers" class="preview__item--image">
-      </div>
-      <div class="preview__item">
-        <img src="./img/orange.png" alt="Orange slippers" class="preview__item--image">
-      </div>
-      <div class="preview__item">
-        <img src="./img/pink.png" alt="Pink slippers" class="preview__item--image">
-      </div>
-      <div class="preview__item">
-        <img src="./img/yellow.png" alt="Yellow slippers" class="preview__item--image">
-      </div>
-    </div>
 
-    <div class="description">
+    <div class="main__description description">
       <div class="description__item">
         <p class="description__item--text"><b>Fast Delivery: </b>2-4 days from SA </p>
         <img src="./img/ZA.png" alt="Flag" class="description__item--flag">
@@ -107,7 +110,7 @@
 
     <form class="order">
       <div class="order__choice">
-        <div class="choice-group order__choice--group">
+        <div class="choice-group order__choice-group">
           <label for="color" class="choice-group__label">color</label>
           <div class="choice-group__select-container">
             <select name="color" id="color" class="choice-group__select">
@@ -119,7 +122,7 @@
           </div>
         </div>
 
-        <div class="choice-group order__choice--group">
+        <div class="choice-group order__choice-group">
           <label for="size" class="choice-group__label">size</label>
           <div class="choice-group__select-container">
             <select name="size" id="size" class="choice-group__select">

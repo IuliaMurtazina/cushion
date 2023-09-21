@@ -4,6 +4,11 @@
   padding: 1.1rem 1.7rem 4.1rem;
 
   background-color: $color-grey-light;
+
+  &__slippers {
+    @include vert-flex;
+    gap: 2rem;
+  }
 }
 
 .trust {
@@ -22,7 +27,7 @@
   }
 }
 
-.slippers {
+.slippers-slider {
   width: 100%;
 
   &__slide {
@@ -32,7 +37,7 @@
   }
 }
 
-.preview {
+.slippers-preview {
   @include flex-center;
   justify-content: space-between;
   gap: 1.2rem;
@@ -48,6 +53,7 @@
     }
 
     &.active {
+      transition: all .3s;
       opacity: .4;
     }
   }
@@ -92,10 +98,10 @@
     @include flex-center;
     justify-content: space-between;
     gap: 1.6rem;
+  }
 
-    &--group {
-      width: 50%;
-    }
+  &__choice-group {
+    width: 50%;
   }
 
   &__btn {

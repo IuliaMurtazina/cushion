@@ -39,7 +39,7 @@ priceValues.forEach((value) => {
 });
 
 // SLIDER
-const slippers = new Swiper(".slippers", {
+const slippersSlider = new Swiper(".slippers-slider", {
   direction: "horizontal",
   loop: true,
 
@@ -49,19 +49,19 @@ const slippers = new Swiper(".slippers", {
   },
 });
 
-const previewItems = document.querySelectorAll(".preview__item");
+const previewItems = document.querySelectorAll(".slippers-preview__item");
 
 previewItems.forEach((previewImage, index) => {
-  previewImage.addEventListener("click", () => {    
-    slippers.slideToLoop(index);
+  previewImage.addEventListener("click", () => {
+    slippersSlider.slideToLoop(index);
   });
 });
 
-slippers.on("slideChange", function () {
+slippersSlider.on("slideChange", function () {
   previewItems.forEach((previewImage) => {
     previewImage.classList.remove("active");
   });
-  const currentSlideIndex = slippers.realIndex;
+  const currentSlideIndex = slippersSlider.realIndex;
   previewItems[currentSlideIndex].classList.add("active");
 });
 
@@ -84,7 +84,7 @@ const selectContainerList = document.querySelectorAll(
 );
 
 Array.from(selectList).forEach((select) =>
-  select.addEventListener("click", function (event) {
+  select.addEventListener("click", (event) => {
     event.stopPropagation();
     select.parentElement.classList.toggle("active");
   }),
